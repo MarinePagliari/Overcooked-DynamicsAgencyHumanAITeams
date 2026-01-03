@@ -1,0 +1,208 @@
+## Codebook
+
+trial
+Sequential index of the row in the dataset.
+
+trial_id
+Identifier of the game instance within the experimental software (map and repetition).
+
+layout
+Identifier of the kitchen map configuration used in the trial.
+
+uid
+Anonymous unique participant identifier.
+
+gender
+Self-reported gender of the participant (categorical).
+
+gender
+Duplicate gender column from raw export; not treated as an independent variable.
+
+control
+Self-reported sense of control at the end of the trial (0 = “Not at all in control”, 4 = “Totally in control”).
+
+coordination
+Qualitative label describing the coordination pattern between the human and the AI (e.g., Unforced_coordination).
+
+variableExplicabilite
+Explainability condition of the AI agent (Explique vs. Non-Explique).
+
+time_elapsed
+Total duration of the trial, in seconds.
+
+score
+Game score computed by the task engine.
+
+human_action_count
+Total number of actions executed by the human participant.
+
+agent_action_count
+Total number of actions executed by the AI agent.
+
+agent_stuck_loop
+Number of detected looping or stuck behaviors exhibited by the AI agent.
+
+hl_switch
+Number of switches between human-led and agent-led task phases.
+
+agent_interact_count
+Number of task-relevant interactions performed by the AI agent.
+
+human_interact_count
+Number of task-relevant interactions performed by the human participant.
+
+achieved_orders_len
+Number of successfully completed recipes during the trial.
+
+bloc
+Experimental block corresponding to the contribution condition.
+
+trialuidQPT
+Unique identifier combining participant ID, block, trial number, and explainability condition.
+
+median_interactioncount
+Median number of interactions within the corresponding experimental subgroup.
+
+median_time_elapsed
+Median trial duration within the corresponding experimental subgroup.
+
+AtoH
+Number of interaction events initiated by the AI toward the human.
+
+HtoA
+Number of interaction events initiated by the human toward the AI.
+
+coll_tot
+Total number of collisions between the human and the AI during the trial.
+
+median_collisions
+Median number of collisions within the relevant subgroup.
+
+ContributionRelativeHuman
+Proportion of task-relevant interactions attributable to the human relative to the AI agent.
+
+ContributionUtile
+Index reflecting how effectively human interactions contributed to order completion.
+
+Min
+Minimum observed value of the corresponding metric within the grouping context.
+
+Max
+Maximum observed value of the corresponding metric within the grouping context.
+
+MMControlold
+Initial min–max normalized version of the control rating.
+
+EfficacHuman
+Human efficiency index based on interaction success.
+
+EfficacRobot
+AI agent efficiency index based on interaction success.
+
+Coordinationbinary
+Binary coding of coordination type for statistical analyses.
+
+Explicabilitebinary
+Binary coding of explainability condition (typically −0.5 / +0.5).
+
+InteracCoordExplic
+Interaction term combining coordination and explainability.
+
+InteractionbyActionUnit
+Ratio of total interactions to total actions, reflecting behavioral efficiency.
+
+TimeforInteraction
+Average time spent per interaction.
+
+MoyHumanInteractByLayout
+Mean number of human interactions for a given layout.
+
+MoyAgentInteractByLayout
+Mean number of agent interactions for a given layout.
+
+AgentinteractstandardLayout
+Standardized agent interaction count within each layout.
+
+HumanInteractStandardLayout
+Standardized human interaction count within each layout.
+
+MoyHumanActionByLayout
+Mean number of human actions for a given layout.
+
+MoyAgentActionByLayout
+Mean number of agent actions for a given layout.
+
+HumanActionStandarLayout
+Standardized human action count within each layout.
+
+AgentActionStandardLayout
+Standardized agent action count within each layout.
+
+EfficaciteHumanLayout
+Human efficiency score normalized within each layout.
+
+MMEfficaciteHumanLayout
+Min–max normalized human efficiency score per layout.
+
+EfficaciteAgentLayout
+AI agent efficiency score normalized within each layout.
+
+MMEfficaciteAgentLayout
+Min–max normalized AI agent efficiency score per layout.
+
+MoyTimeByLayout
+Mean completion time for a given layout.
+
+TimeElapsedcontrolledforLayout
+Trial duration adjusted for layout-specific difficulty.
+
+MinParticipant
+Minimum observed value of the metric for a given participant.
+
+MaxParticipant
+Maximum observed value of the metric for a given participant.
+
+MMControl
+Min–max normalized control score at the participant level.
+
+NbDeplacementBylayout
+Average number of movements observed for a given layout.
+
+MincontrolLayout
+Minimum observed control rating for a given layout.
+
+MaxControlLayout
+Maximum observed control rating for a given layout.
+
+MoycontrolByLayout
+Mean control rating computed per layout.
+
+MMControlLayout
+Min–max normalized control score within each layout.
+
+ZscoreControlLayout
+Z-scored control rating standardized within each layout.
+
+ControlByNbDeplacement
+Control rating adjusted by the number of movements executed.
+
+Z_coordination
+Z-scored coordination index.
+
+Z_explicability
+Z-scored explainability-related index.
+
+Z_time
+Z-scored trial duration.
+
+Z_Deplacement
+Z-scored number of movements.
+
+Efficacite(InteractionsDivByAction)
+Interaction-to-action ratio used as a general efficiency indicator.
+
+Z_Deplacement_Categ
+Categorical version of the standardized movement count.
+
+Explained_dummy
+Dummy-coded explainability variable (0 = Non-Explique, 1 = Explique).
